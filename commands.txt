@@ -1,0 +1,67 @@
+POST _analyze
+{
+  "analyzer" : "parsi",
+  "text" : "روباه قهوه‌اي چابك از روی سگ تنبل می پرد"
+}
+
+DELETE my_index
+
+PUT my_index
+{
+  "mappings": {
+    "properties": {
+      "title": {
+        "type": "text",
+        "analyzer": "parsi",
+        "search_analyzer": "parsi"
+      }
+    }
+  }
+}
+
+POST my_index/_doc
+{
+  "title" : "روباه قهوه‌اي چابك از روی سگ تنبل می پرد"
+}
+
+GET my_index/_search
+{
+    "query": {
+        "match": { 
+          "title": {
+            "query": "روباه قهوه‌اي چابك",
+            "analyzer": "parsi" 
+      }
+    }
+    }
+}
+
+
+GET /my_index/_analyze?pretty=true
+{
+  "analyzer" : "parsi",
+  "text" : "روباه قهوه‌اي چابك از روی سگ تنبل می پرد"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
