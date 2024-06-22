@@ -43,3 +43,29 @@ If you want to build ParsiAnalyzer for any specific version of Elasticsearch, fo
 8. In the target/releases folder, you’ll now find a zip file. install the plugin using this command:
 ```bin/elasticsearch-plugin install file:///path/to/ParsiAnalyzer.zip```
 
+Change Elasticsearch version :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/pom.png?raw=true)
+
+&
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/descriptor.png?raw=true)
+
+Build the project :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/build.png?raw=true)
+
+the related packages apear after downloading :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/NewDependency.png?raw=true)
+
+run the app with goal of package :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/build1.png?raw=true)
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/build2.png?raw=true)
+
+at final :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/build3.png?raw=true)
+
