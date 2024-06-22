@@ -41,9 +41,13 @@ If you want to build ParsiAnalyzer for any specific version of Elasticsearch, fo
 6. Change elasticsearch.version to your desired version
 7. Build and Run maven project with Goals ```package```
 8. In the target/releases folder, you’ll now find a zip file. install the plugin using this command:
-```bin/elasticsearch-plugin install file:///path/to/ParsiAnalyzer.zip```
+bash```bin/elasticsearch-plugin install file:///path/to/ParsiAnalyzer.zip```
 
-Change Elasticsearch version :
+The steps are as the following :
+
+Note : for establish a ELK Stack, refer to my [github](https://github.com/kayvansol/elasticsearch/)
+
+Change Elasticsearch version to 8.13.4 :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/pom.png?raw=true)
 
@@ -55,11 +59,11 @@ Build the project :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/build.png?raw=true)
 
-the related packages apear after downloading :
+the related packages appear after downloading :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/NewDependency.png?raw=true)
 
-run the app with goal of package :
+Run the app with goal of package :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/build1.png?raw=true)
 
@@ -81,11 +85,11 @@ install the plugin for Elasticsearch 8.13.4 :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/install.png?raw=true)
 
-test the installed analyzer after restart the container :
+test the installed analyzer after restart the container, you can use Elasticsearch's `analyze` API :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/post.png?raw=true)
 
-create your index with the analyzer :
+create your index with the analyzer, ParsiAnalyzer can be specified directly in the field mapping as follows :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/createindex.png?raw=true)
 
