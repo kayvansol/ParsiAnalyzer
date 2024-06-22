@@ -69,3 +69,35 @@ at final :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/build3.png?raw=true)
 
+the zip file is present at target/releases folder :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/release.png?raw=true)
+
+upload zip file inside elasticsearch container :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/uploadzip.png?raw=true)
+
+install the plugin for Elasticsearch 8.13.4 :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/install.png?raw=true)
+
+test the installed analyzer after restart the container :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/post.png?raw=true)
+
+create your index with the analyzer :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/createindex.png?raw=true)
+
+insert data to the index :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/insertdata.png?raw=true)
+
+search :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/search.png?raw=true)
+
+get with analyzer :
+
+![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/getwithanalyzer.png?raw=true)
+
