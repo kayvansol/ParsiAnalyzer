@@ -79,6 +79,8 @@ the zip file is present at target/releases folder :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/release.png?raw=true)
 
+Note: you can reach this file at [release](https://github.com/kayvansol/ParsiAnalyzer/releases/download/v1.0.0/ParsiAnalyzer-1.0-SNAPSHOT.zip) at my github.
+
 **upload** zip file inside `elasticsearch` container :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/ParsiAnalyzer/main/img/uploadzip.png?raw=true)
